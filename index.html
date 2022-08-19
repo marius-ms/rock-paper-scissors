@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rock | Paper | Scissors</title>
+  </head>
+  <body>
+    <div class="game_title">
+      <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="game_container">
+      <ul class="game_container_intro">
+        <img src="../img/computer_appear.png" alt="" />
+        <ul class="intro_messages">
+          <li class="intro_message intro_message_1"></li>
+          <li class="intro_message intro_message_2"></li>
+          <li class="intro_message intro_message_3"></li>
+        </ul>
+        <button class="game_start">Begin</button>
+      </ul>
+      <div class="gameboard">
+        <div class="game_board_side">
+          <h3>Computer</h3>
+          <div class="healthbar">
+            <img src="../img/heart-pixel.png" class='computer-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='computer-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='computer-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='computer-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='computer-heart' alt="" />
+          </div>
+          <button class="rock button_computer">
+            <img src="../img/rock-pixel.png" alt="" class="button-image" />
+          </button>
+          <button class="paper button_computer">
+            <img src="../img/paper-pixel.png" alt="" class="button-image" />
+          </button>
+          <button class="scissors button_computer">
+            <img src="../img/scissors-pixel.png" alt="" class="button-image" />
+          </button>
+        </div>
+        <div class="gameboard_middle">
+          - - -
+          <h4 class="scoreboard">
+            <span class="score_player">0</span>:<span class="score_computer"
+              >0</span
+            >
+          </h4>
+          - - -
+        </div>
+        <div class="game_board_side">
+          <button class="rock button_player">
+            <img src="../img/rock-pixel.png" alt="" class="button-image" />
+          </button>
+          <button class="paper button_player">
+            <img src="../img/paper-pixel.png" alt="" class="button-image" />
+          </button>
+          <button class="scissors button_player">
+            <img src="../img/scissors-pixel.png" alt="" class="button-image" />
+          </button>
+          <div class="healthbar">
+            <img src="../img/heart-pixel.png" class='player-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='player-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='player-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='player-heart' alt="" />
+            <img src="../img/heart-pixel.png" class='player-heart' alt="" />
+          </div>
+          <h3>you</h3>
+        </div>
+      </div>
+      <div class="gameboard_end">
+        <div class="gameboard_end_lose">
+          <div class="gameboard_end_message">
+            <h3>The computer won!</h3>
+              <img src="./img/computer_win.png" alt="" class="happy-computer" />
+            <div class="scoreboard_container">
+              <ul class="scoreboard">
+                <li class="score_player">0</li>
+                <li>:</li>
+                <li class="score_computer">0</li>
+              </ul>
+            </div>
+            <div class="end_messages">
+            <p class = 'pc_win_message_1'></p>
+            <p class = 'pc_win_message_2'></p>
+            </div>
+            <button class="scoreboard_exit">try again</button>
+          </div>
+        </div>
+        <div class="gameboard_end_win">
+          <div class="gameboard_end_message">
+            <h3>You have won!</h3>
+              <img src="./img/computer_lose.png" alt="" class="happy-computer" />
+            <div class="scoreboard_container">
+              <ul class="scoreboard">
+                <li class="score_player">0</li>
+                <li>:</li>
+                <li class="score_computer">0</li>
+            </div>
+            <div class="end_messages">
+            <p class = 'player_win_message_1'></p>
+            <p class = 'player_win_message_2'></p>
+          </div>
+          </div>
+            <button class="scoreboard_exit">win again</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script/main.js"></script>
+</html>
